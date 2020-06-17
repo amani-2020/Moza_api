@@ -247,17 +247,17 @@ module.exports = {
     items.push({
       en: {
         mMenu: EN.sort(compareValues("id")),
-        culture: culEN,
+        culture: Object.assign({},culEN),
         shipment: shipEN,
       },
       fr: {
         mMenu: FR.sort(compareValues("id")),
-        culture: culFR,
+        culture:  Object.assign({},culFR),
         shipment: shipFR,
       },
       ar: {
         mMenu: AR.sort(compareValues("id")),
-        culture: culAR,
+        culture: Object.assign({}, culAR),
         shipment: shipAR,
       },
     });
